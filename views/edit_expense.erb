@@ -1,0 +1,25 @@
+<form method="POST" action="/budgetup/expenses/<%= @transaction.id %>">
+
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name" value = "<%= @transaction.name %>"/>
+
+
+  <label for="transaction-select">Select a category</label>
+  <select name="category_id" id="transaction-select">
+
+    <% for category in @categories %>
+
+    <option value="<%= category.id %>"
+
+      ><%= category.name %></option>
+    <% end %>
+  </select>
+
+  <label for="calendar">Calendar:</label>
+  <input type="date" name="calendar" id="calendar" value = "<%= @transaction.calendar %>"/>
+
+  <label for="amount">Amount</label>
+  <input type="number" name="amount" id="amount" value = "<%= @transaction.amount %>"/>
+
+  <input type="submit" value="Edit Transaction" />
+</form>

@@ -62,8 +62,21 @@ get '/budgetup/categories/new' do
   erb(:new_category)
 end
 
+# edit_expense
+get "/budgetup/expenses/:id/edit" do
+  @transaction = Transaction.find(params[:id])
+  @categories = Category.all()
+  erb(:edit_expense)
+end
 
-# show
+# update_expense
+post "/budgetup/expenses/:id" do
+  transaction = Transaction.new(params)
+  transaction.update()
+  redirect to '/budgetup/expenses'
+end
+
+# show_expense
 get '/budgetup/expenses/:id' do
   @transaction = Transaction.find(params[:id])
   erb(:show_expense)
