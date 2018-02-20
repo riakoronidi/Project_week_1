@@ -1,0 +1,21 @@
+<h3>Create a new expense</h3>
+<form method="POST" action="/budgetup/expenses">
+
+  <label for="name">Spent money on:</label>
+  <input type="text" name="name" id="name"/>
+
+  <label for="category-select">Select a category</label>
+  <select name="category_id" id="category-select">
+    <% for category in @categories %>
+    <option value ="<%= category.id %>"> <%= category.name%></option>
+    <% end %>
+  </select>
+
+  <label for="calendar">Enter a date:</label>
+  <input type="date" name="calendar" id="calendar" />
+
+  <label for="amount">How much did you spend:</label>
+  <input type="number" step="any" name="amount" id="amount" />
+
+  <input type="submit" value="Add Expense" />
+</form>

@@ -1,0 +1,13 @@
+<h3>All spendinds</h3>
+
+
+<p><b>Expense <%= @transaction.id %></b></p>
+<p>Name: <%= @transaction.name %></p>
+<p>Category:
+<%= @transaction.category().name  %></p>
+<p>Date: <%= @transaction.calendar %></p>
+<p>Amount: £<%= @transaction.amount %></p>
+
+<form action="/budgetup/expenses/<%= @transaction.id %>/delete_expense" method="post">
+  <input type="submit" value="Delete Expense" />
+</form>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BudgetUP</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Special+Elite" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+  <h1>My Budget Page</h1>
+  <nav>
+    <a href="/budgetup">Home</a>
+    <a href="/budgetup/about">About</a>
+  </nav>
+
+  <nav>
+    <ul>
+      <li><a href="/budgetup/expenses">Expenses</a></li>
+      <li><a href="/budgetup/categories">Categories</a></li>
+    </ul>
+  </nav>
+
+  <nav>
+    <ul>
+      <li><a href="/budgetup/expenses/new">Add a new spending</a></li>
+      <li><a href="/budgetup/categories/new">Add a new Category</a></li>
+    </ul>
+  </nav>
+
+  <nav>
+    <ul>
+      <li><a href="/budgetup/expenses/categories">Expenses by category</a></li>
+    </ul>
+  </nav>
+
+  <%= yield %>
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+body {
+  background: LIGHTGRAY url('/images/piggy_bank.svg');
+  background-size: 45%;
+  background-repeat: no-repeat;
+  color: black;
+  font-family: 'Merriweather', serif;
+  padding: 0px;
+  margin: 0px;
+}
