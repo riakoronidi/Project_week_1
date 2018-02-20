@@ -6,35 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BudgetUP</title>
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Special+Elite" rel="stylesheet">
+  <link rel="icon" href="/images/logo.jpg" />
+
   <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
-  <h1>My Budget Page</h1>
-  <nav>
-    <a href="/budgetup">Home</a>
-    <a href="/budgetup/about">About</a>
-  </nav>
+  <header>BudgetUP</header>
 
-  <nav>
+  <nav class="bar">
+    <ul>
+      <li><a href="/budgetup" id=main>Home</a></li>
+      <li>|</li>
+      <li><a href="/budgetup/about" id=main>About</a></li>
+  </ul>
+</nav>
+
+  <nav class="menu">
     <ul>
       <li><a href="/budgetup/expenses">Expenses</a></li>
       <li><a href="/budgetup/categories">Categories</a></li>
-    </ul>
-  </nav>
-
-  <nav>
-    <ul>
       <li><a href="/budgetup/expenses/new">Add a new spending</a></li>
       <li><a href="/budgetup/categories/new">Add a new Category</a></li>
-    </ul>
-  </nav>
-
-
-  <nav>
-    <ul>
       <li><a href="/budgetup/expenses/categories">Expenses by category</a></li>
     </ul>
   </nav>
+
 
   <%= yield %>
 
