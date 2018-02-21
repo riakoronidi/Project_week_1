@@ -1,24 +1,33 @@
 <h3>All spendings</h3>
 
-<% @transactions.each{|transaction|  %>
-  <table>
+
+<table>
+  <tr>
+    <th><b>Expenses</b></th>
+    <th><b>Name</b></th>
+    <th><b>Category</b></th>
+    <th><b>Date</b></th>
+    <th><b>Amount</b></th>
+  </tr>
+  <% @transactions.each{|transaction|  %>
     <tr>
-  <td bgcolor="ROSYBROWN"><b>Expense </i><%= transaction.id %></b></td>
-  <td><b>Name:</b> <%= transaction.name %></td>
-  <td><b>Category:</b> <%=  transaction.category().name  %></td>
-  <td><b>Date:</b> <%= transaction.calendar %></td>
-  <td><b>Amount: </b>£<%= transaction.amount %></td>
+      <td>Expense <%= transaction.id %></td>
+      <td><%= transaction.name %></td>
+      <td><%=  transaction.category().name  %></td>
+      <td><%= transaction.calendar %></td>
+      <td>£<%= transaction.amount %></td>
 
-  <td><a href="/budgetup/expenses/<%= transaction.id %>">Show Expense</a></td>
+      <td><a href="/budgetup/expenses/<%= transaction.id %>">Show Expense</a></td>
 
-  <td><form action="/budgetup/expenses/<%= transaction.id %>/delete_expense" method="POST">
-    <input type="submit" value="Delete Expense" />
-  </form></td>
+      <td><form action="/budgetup/expenses/<%= transaction.id %>/delete_expense" method="POST">
+        <input type="submit" value="Delete Expense" />
+      </form></td>
 
-  <td><a href="/budgetup/expenses/<%= transaction.id %>/edit">Edit Expense</a></td>
+      <td><a href="/budgetup/expenses/<%= transaction.id %>/edit">Edit Expense</a></td>
 
-</tr>
-</table>
-  <% } %>
+    </tr>
+      <% } %>
+  </table>
+
 
   <h5> Total: £<%= @total %> </h5>
