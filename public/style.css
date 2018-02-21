@@ -1,10 +1,10 @@
 header{
-background-color: MAROON;
-font-family: 'Helvetica';
-font-size: 50px;
-padding: 10px;
-text-align: center;
-color: DARKCYAN;
+  background: MAROON;
+  font-family: 'Impact';
+  font-size: 60px;
+  padding: 10px;
+  text-align: center;
+  color: black;
 }
 
 
@@ -20,25 +20,39 @@ img{
   height: 150px;
 }
 body {
-  background-color: MOCCASIN;
+  background-color: #D7CEC7;
   background-image:url('/images/piggy_bank.svg');
   background-position: bottom right;
   background-attachment: fixed;
   background-size: 25%;
   background-repeat: no-repeat;
-  color: black;
+  /* color: black; */
   font-family: 'Helvetica', serif;
   padding: 0px;
   margin: 0px;
 
 }
 
+.footer{
+  font-size: 10px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
 p{
   font-family: 'Helvetica';
-  /* font-style: italic; */
   font-size: 15px;
   width: 50em;
-  word-wrap: inherit;
+  text-align: justify;
+  padding: 0px 20px 5px 20px;
+}
+
+.index{
+  width: 25em;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,10 +68,12 @@ h1{
 h2 {
   font-family: 'Helvetica';
   font-size: 20px;
+  margin-top: 40px;
+  padding: 20px 10px 5px 20px;
+
 }
 
 h3 {
-  /* font-size: 1.8em; */
   color: darkred;
   margin-bottom: 20px;
   padding: 20px 20px 5px 20px;
@@ -77,20 +93,21 @@ a:hover, a:active, a:focus {
 }
 
 .bar li{
-display: inline;
-text-transform: uppercase;
+  display: inline;
+  text-transform: uppercase;
 }
 
 .menu li{
-display: inline;
-padding: 0px 15px 5px 0px;
+  display: inline;
+  padding: 0px 15px 5px 0px;
 }
 
-table, th, td {
-  padding: 0px 5px 5px 0px;
+
+table {
+  border-collapse: separate;
+}
+
+td    {
   border: 1px solid black;
+  padding: 0px 5px 5px 0px;
 }
-
-/* table {
-  border-collapse: collapse;
-} */

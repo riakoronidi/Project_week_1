@@ -3,10 +3,8 @@
 <% @categories.each{|category|  %>
   <table>
     <tr>
-      <td><b>Category <%= category.id %></b></td>
-      <!-- <td>|</td> -->
-      <td><i>Name: </i><%= category.name %></td>
-      <!-- <td>|</td> -->
+      <td bgcolor="ROSYBROWN"><b>Category <%= category.id %></b></td>
+      <td><b>Name: </b><%= category.name %></td>
 
       <td><form action="/budgetup/categories/<%= category.id %>/delete_category" method="POST">
         <input type="submit" value="Delete Category" />
