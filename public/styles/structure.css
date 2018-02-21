@@ -8,17 +8,6 @@ header{
 }
 
 
-#main{
-  font-weight: bold;
-}
-#main:hover{
-  background-color: white;
-}
-
-img{
-  width: 150px;
-  height: 150px;
-}
 body {
   background-color: #D7CEC7;
   background-image:url('/images/piggy_bank.svg');
@@ -26,11 +15,9 @@ body {
   background-attachment: fixed;
   background-size: 25%;
   background-repeat: no-repeat;
-  /* color: black; */
   font-family: 'Helvetica', serif;
   padding: 0px;
   margin: 0px;
-
 }
 
 .footer{
@@ -70,7 +57,6 @@ h2 {
   font-size: 20px;
   margin-top: 40px;
   padding: 20px 10px 5px 20px;
-
 }
 
 h3 {
@@ -102,16 +88,9 @@ a:hover, a:active, a:focus {
   padding: 0px 15px 5px 0px;
 }
 
-
-table {
-  border-collapse: separate;
+#main{
+  font-weight: bold;
 }
-
-td, th, tr  {
-    /* border: 1px solid black; */
-  padding: 0px 10px 10px 0px;
-}
-
-th{
-  text-align: left;
+#main:hover{
+  background-color: white;
 }
